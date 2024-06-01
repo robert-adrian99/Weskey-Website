@@ -9,7 +9,7 @@ import Foundation
 import Ignite
 
 struct About: StaticPage {
-    var title = "About 1"
+    var title = "About"
     
     func body(context: PublishingContext) async -> [any BlockElement] {
         Text {
