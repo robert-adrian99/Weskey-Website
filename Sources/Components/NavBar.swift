@@ -12,9 +12,9 @@ struct NavBar: Component {
     func body(context: PublishingContext) -> [any PageElement] {
         NavigationBar(logo: Image("/images/logo.svg", description: "Weskey Logo").frame(width: "min(10vw, 300px)", height: "100%")
         ) {
-            Link("Our Story", target: OurStory())
-            Link("About", target: About())
-            Link("Contact", target: Contact())
+            Link("Our Story", target: OurStory().path)
+            Link("About", target: About().path)
+            Link("Contact", target: Contact().path)
         }
 //        .cornerRadius(30)
         .navigationBarStyle(.dark)

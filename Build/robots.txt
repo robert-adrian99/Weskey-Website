@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: robert.adrian99.github.io/sitemap.xml
+Sitemap: https://robert-adrian99.github.io/sitemap.xml

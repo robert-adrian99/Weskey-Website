@@ -14,7 +14,7 @@ struct IgniteWebsite {
     }
 }
 
-struct ExampleSite: Site {    
+struct ExampleSite: Site {
     var name = "Weskey App"
     var url = URL("https://robert-adrian99.github.io")
     var builtInIconsEnabled = true
