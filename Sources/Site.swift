@@ -16,7 +16,7 @@ struct IgniteWebsite {
 
 struct ExampleSite: Site {
     var name = "Weskey App"
-    var url = URL("https://robert-adrian99.github.io")
+    var url = URL("https://robert-adrian99.github.io/Weskey-Website")
     var builtInIconsEnabled = true
     var homePage = Home()
     var theme = MyTheme()
