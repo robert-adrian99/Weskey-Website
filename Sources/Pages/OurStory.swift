@@ -13,7 +13,7 @@ struct OurStory: StaticPage {
     
     func body(context: PublishingContext) async -> [any BlockElement] {
         Text {
-            "Our story"
+            "Our story begins with an idea: How to help people?"
         }
     }
 }

@@ -15,6 +15,11 @@ struct NavBar: Component {
             Link("Our Story", target: OurStory().path)
             Link("About", target: About().path)
             Link("Contact", target: Contact().path)
+            Link(target: "https://apps.apple.com/ro/app/swift-playgrounds/id908519492", content: {
+                Image("/images/appleStore.svg", description: "apple store")
+                    .resizable()
+                    .frame(width: 200)
+            })
         }
 //        .cornerRadius(30)
         .navigationBarStyle(.dark)
