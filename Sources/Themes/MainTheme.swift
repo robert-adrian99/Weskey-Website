@@ -14,7 +14,7 @@ struct MyTheme: Theme {
             }
             .padding(.vertical, 100)
             .class("container")
-            .style("background-image: url('/Weskey-Website/images/background.svg');")
+            .style("background-image: url('/images/background.svg')")
             .style("background-color: #E9E3D5;")
         }
     }

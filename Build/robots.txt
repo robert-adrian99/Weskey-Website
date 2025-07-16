@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://robert-adrian99.github.io/Weskey-Website/sitemap.xml
+Sitemap: https://www.yoursite.com/sitemap.xml

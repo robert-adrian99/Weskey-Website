@@ -1,5 +1,5 @@
-import Foundation
 import Ignite
+import Foundation
 
 @main
 struct IgniteWebsite {
@@ -14,9 +14,11 @@ struct IgniteWebsite {
     }
 }
 
+var str:StaticString = "https://www.yoursite.com"
+
 struct ExampleSite: Site {
     var name = "Weskey App"
-    var url = URL("https://robert-adrian99.github.io/Weskey-Website")
+    var url = URL(str)
     var builtInIconsEnabled = true
     var homePage = Home()
     var theme = MyTheme()

@@ -10,18 +10,25 @@ import Ignite
 
 struct NavBar: Component {
     func body(context: PublishingContext) -> [any PageElement] {
-        NavigationBar(logo: Image("/images/logo.svg", description: "Weskey Logo").frame(width: "min(10vw, 300px)", height: "100%")
-        ) {
-            Link("Our Story", target: OurStory().path)
-            Link("About", target: About().path)
-            Link("Contact", target: Contact().path)
-            Link(target: "https://apps.apple.com/ro/app/swift-playgrounds/id908519492", content: {
-                Image("/images/appleStore.svg", description: "apple store")
-                    .resizable()
-                    .frame(width: 200)
-            })
+        NavigationBar() {
+            Link(Image("/images/logo.svg", description: "Weskey Logo")
+                .frame(width: "min(10vw, 100px)", height: "100%", alignment: .center),
+                 target: Home().path)
+            Link(Text("Our Story")
+                .horizontalAlignment(.center)
+                .frame(width: "min(10vw, 100px)", height: "100%"),
+                 target: OurStory().path)
+            Link(Text("About")
+                .horizontalAlignment(.center)
+                .frame(width: "min(10vw, 100px)", height: "100%"),
+                 target: About().path)
+            Link(Text("Contact")
+                .horizontalAlignment(.center)
+                .frame(width: "min(10vw, 100px)", height: "100%"),
+                 target: Contact().path)
         }
-//        .cornerRadius(30)
+        .margin("10px")
+        .cornerRadius(30)
         .navigationBarStyle(.dark)
         .background(Color(red: 0.039, green: 0.447, blue: 0.451))
         .position(.fixedTop)

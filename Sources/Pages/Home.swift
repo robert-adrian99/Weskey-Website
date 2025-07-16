@@ -3,6 +3,7 @@ import Ignite
 
 struct Home: StaticPage {
     var title = "Home"
+    var path = "/"
 
     func body(context: PublishingContext) -> [BlockElement] {
         Text("Home")
